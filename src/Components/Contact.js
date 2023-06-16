@@ -3,7 +3,7 @@ import BannerBackground from "../Assets/home-banner-background.png";
 import BannerImage from "../Assets/home-banner-image.png";
 import { FiArrowRight } from "react-icons/fi";
 
-const About = () => {
+const Contact = () => {
   return (
     <div className="home-banner-container">
         <div className="home-bannerImage-container">
@@ -11,11 +11,11 @@ const About = () => {
         </div>
         <div className="home-text-section">
             <h1 className="primary-heading">
-                Tentang Kami
+                Kontak Kami
             </h1>
-            <p className="primary-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt optio hic quisquam odit voluptatum nemo dolorem qui, blanditiis repudiandae perspiciatis, molestiae assumenda quis maxime neque ex sint laudantium dolorum cupiditate.</p>
+            <p className="primary-text">Informasi lebih lanjut hubungi kami, dengan mengklik tombol di bawah ini.</p>
             <button className="secondary-button">
-                Order Now <FiArrowRight />
+                Call Now <FiArrowRight />
             </button>
         </div>
         <div className="home-image-section">
@@ -25,4 +25,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Contact

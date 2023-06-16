@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Logo from '../Assets/Logo.svg';
-import { BsCart2 } from "react-icons/bs";
+// import { BsCart2 } from "react-icons/bs";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import { 
     Box,
@@ -16,6 +16,7 @@ import InfoIcon from "@mui/icons-material/Info";
 import CommentRoundedIcon from '@mui/icons-material/CommentRounded';
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -48,13 +49,11 @@ const Navbar = () => {
             <img src={Logo} alt="" />
         </div>
         <div className="navbar-links-container">
-            <a href="/#">Home</a>
-            <a href="/#">About</a>
-            <a href="/#">Testimonials</a>
-            <a href="/#">Contact</a>
-            <a href="/#">
-                <BsCart2 className="navbar-cart-icon" />
-            </a>
+            <Link to="/home">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/contact">Contact</Link>
+            <Link to="/category/Makanan">Makanan</Link>
+            <Link to="/category/Minuman">Minuman</Link>
             <button className="primary-button">Bookings Now</button>
         </div>
         <div className="navbar-menu-container">
